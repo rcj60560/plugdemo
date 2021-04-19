@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-println(rootProject.ext.username)
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -34,11 +33,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation project(path: ':user')
     testImplementation 'junit:junit:4.+'
     implementation 'com.lzy.net:okgo:3.0.4'
+    implementation project(':common')
     if (isRelease) {
-        implementation project(':common')
+        implementation project(':login')
         implementation project(':user')
     }
 }
