@@ -35,4 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, UserMainActivity.class));
         Log.i(TAG, "go2User: ");
     }
+
+    public void test(String[] str1){
+        String str = null;
+        for (int i = 0; i < str1.length; i++) {
+            str += str1[i];
+        }
+    }
 }
