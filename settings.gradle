@@ -1,5 +1,2 @@
-include ':common'
-include ':login'
-include ':user'
 include ':app'
 rootProject.name = "PlugDemo"

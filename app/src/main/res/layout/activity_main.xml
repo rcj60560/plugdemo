@@ -13,4 +13,9 @@
         android:onClick="go2User"
         android:text="跳转" />
 
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

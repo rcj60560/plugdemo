@@ -7,11 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.luocj.user.UserMainActivity;
-import com.lzy.okgo.OkGo;
-import com.lzy.okgo.callback.StringCallback;
-import com.lzy.okgo.model.Response;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,25 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        OkGo.<String >get("www.baidu.com")
-                .execute(new StringCallback() {
-                    @Override
-                    public void onSuccess(Response<String> response) {
-                        Log.i("TAG", "onSuccess: ");
-                    }
-                });
     }
 
     public void go2User(View view) {
-        startActivity(new Intent(this, UserMainActivity.class));
         Log.i(TAG, "go2User: ");
-    }
-
-    public void test(String[] str1){
-        String str = null;
-        for (int i = 0; i < str1.length; i++) {
-            str += str1[i];
-        }
     }
 }
