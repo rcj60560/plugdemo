@@ -1,16 +1,15 @@
 plugins {
     id 'com.android.application'
 }
-
 println "demo:app build.gradle"
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion rootProject.ext.app_android.compileSdkVersion
+    buildToolsVersion rootProject.ext.app_android.buildToolsVersion
 
     defaultConfig {
         applicationId "com.luocj.plugdemo"
-        minSdkVersion 21
+        minSdkVersion rootProject.ext.app_android.minSdkVersion
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
