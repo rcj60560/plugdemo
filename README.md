@@ -7,3 +7,4 @@
 
 抽取app_config.gralde作为项目配置文件 引入方法 
 > apply from : 'app_config.gradle'
+> test github
