@@ -1,3 +1,5 @@
+include ':annotation-processor'
+include ':annotation'
 include ':user'
 include ':login'
 include ':common'
