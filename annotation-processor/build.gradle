@@ -17,6 +17,12 @@ dependencies {
     implementation project(':annotation')
 }
 
+// 控制台中文设置UTF-8
+tasks.withType(JavaCompile){
+    options.encoding = "UTF-8"
+}
+
+
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8

@@ -38,6 +38,7 @@ dependencies {
     implementation 'com.lzy.net:okgo:3.0.4'
     implementation project(':common')
     implementation project(':annotation')
+    annotationProcessor project(':annotation-processor')
     if (isRelease) {
         implementation project(':user')
         implementation project(':login')
