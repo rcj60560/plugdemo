@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void go2User(View view) {
         Log.i(TAG, "go2User: ");
-//        Intent intent = new Intent(this, UserMainActivity.class);
-//        startActivity(intent);
+        //test main
 
+        //reset git push -f
     }
 }
