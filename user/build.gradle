@@ -30,6 +30,23 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    // 源集 —— 用来设置Java目录或者资源目录
+
+    sourceSets {
+        main {
+            if (!isRelease) {
+                //组件化单独运行
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                //集成化
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
 }
 
 dependencies {
@@ -40,4 +57,5 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation project(':common')
 }

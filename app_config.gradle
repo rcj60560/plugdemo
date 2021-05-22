@@ -1,12 +1,12 @@
 ext {
     username = "luochenjian"
     // 是否是发布模式 所有模块都是lib/apk
-    isRelease = false
+    isRelease = true
 
     app_android = [
             compileSdkVersion: 30,
             buildToolsVersion: "30.0.3",
-            minSdkVersion:21
+            minSdkVersion    : 21
     ]
 
 }
