@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     public void go2User(View view) {
         Log.i(TAG, "go2User: ");
         //test main
-
         //reset git push -f
     }
 }
